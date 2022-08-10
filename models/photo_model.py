@@ -7,12 +7,12 @@ from models.base_model import BaseModel
 
 
 class Photo(BaseModel):
-    def __init__(self, user_id):
+    def __init__(self, owner_id):
         super().__init__()
-        self.id: int = BaseModel.get_id(user_id)
+        self.owner_id: int = BaseModel.get_id(owner_id)
 
     def photo_200(self, offset):
-        url = f"https://api.vk.com/method/photos.getAll?owner_id={self.id}&count=200&offset={offset}&access_token={self.token}&v={apiV} "
+        url = f"https://api.vk.com/method/photos.getAll?owner_id={self.owner_id}&count=200&offset={offset}&access_token={self.token}&v={apiV} "
         return json.loads(requests.get(url).text)
 
     @staticmethod
@@ -43,3 +43,6 @@ class Photo(BaseModel):
             os.mkdir('foto')
         if os.path.exists("archive.zip"):
             os.remove("archive.zip")
+
+
+
