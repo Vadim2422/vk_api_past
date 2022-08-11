@@ -30,6 +30,18 @@ class Photo(BaseModel):
         return links
 
     @staticmethod
+    def get_all_photo(user_id, offset=0):
+        get = Photo(user_id)
+        photos = get.photo_200(offset)
+        count = photos['response']['count']
+        links = Photo.links_from_json(photos)
+        while count - 200 > 0:
+            offset += 200
+            links.extend(Photo.links_from_json(get.photo_200(offset)))
+            count -= 200
+        return links
+
+    @staticmethod
     def download_photo(links, path):
         for i, link_photo in enumerate(links):
             img_file = open(path + f"/img{i + 1}.jpg", 'wb')

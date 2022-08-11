@@ -1,6 +1,6 @@
 import json
 import requests
-from auth_data import token_5707 as token, apiV
+from auth_data import fake_token as token, apiV
 
 
 class BaseModel:
