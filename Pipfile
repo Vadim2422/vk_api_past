@@ -11,6 +11,7 @@ uvicorn = "*"
 python-jose = {extras = ["cryptography"], version = "*"}
 passlib = {extras = ["bcrypt"], version = "*"}
 python-multipart = "*"
+pydantic = {extras = ["email"], version = "*"}
 
 [dev-packages]
 
