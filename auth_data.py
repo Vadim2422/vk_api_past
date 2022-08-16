@@ -1,4 +1,4 @@
-import os
-token = os.environ['token']
-apiV = os.environ['apiV']
-
+token_5707 = 'vk1.a.ji1kSVmMcfU2jXYHLi7M0-QKlN4AsB4It_IfvnT803buJhk1v6B4xrn-T4LMuttVdGqtBIrB-Hhg7f6LiaAQ_taWl-EM8wFfwvY0yOmSKjr9tLFRdD91RUlf46S6TQwT0rftR7OE91Wvepr2sMTvmYfBkmLjtq210inmNmDZ6ZNs3yoJAM44IOlAl1oiPAn2'
+token_9434 = 'vk1.a.SuIveXDftO9RX2w6nyI3SwtoB7Fr38rrOvS-OCcECn_SbrxxCkIJRYlChTZtEPjoQjO9ved2xoOy5MWsyQFTS3I0k41CPsjuNYUwVWPBvdeQwWFDSf853KaDperzv4owA9fSi9mFP80a1V4beOUciypwz6J5_C8swqD6PVQY3Y0Giz0-r80QfoIhc6U4KOBp'
+apiV = '5.131'
+fake_token = 'vk1.a.a_FQvrqU0dqWQcBgjlcK_UJumSqfw3zOJ2rHDvGbEqU2t6sJ84l4kWQHXWBBFfn1HvVZg7dITiMVDaXqPTij39cRqx98VZtCDB_VBGZlab924AEXD3bdGr9swy4-DweE12l1oKfwLMapdk6-NlwqrzR-AJ98CQmucW0cG1APri7yiQYjnFo7Z_3rsj2iakk1'
